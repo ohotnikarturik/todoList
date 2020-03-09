@@ -1,0 +1,19 @@
+.itemAddForm {
+  margin: 20px 0;
+}
+
+.btnItemAddForm {
+  padding: 4px;
+  margin: 0 5px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+.btnItemAddForm:hover {
+  background-color: darkcyan;
+  color: white;
+}

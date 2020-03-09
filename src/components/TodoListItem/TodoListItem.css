@@ -1,0 +1,34 @@
+.todoListItem {
+  font-size: 20px;
+  cursor: pointer;
+}
+.done {
+  text-decoration: line-through;
+}
+
+.mark {
+  color: tomato;
+  font-weight: bold;
+}
+
+.buttonItem {
+  padding: 4px;
+  margin: 0 5px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  width: 60px;
+}
+
+.buttonImp {
+  color: tomato;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

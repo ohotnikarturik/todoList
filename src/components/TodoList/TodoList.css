@@ -1,0 +1,9 @@
+.todoList {
+  width: 100%;
+}
+
+.listItem {
+  border: 1px solid gray;
+  padding: 10px 20px;
+  margin: 10px;
+}
