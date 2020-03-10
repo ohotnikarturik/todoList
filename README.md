@@ -1,3 +1,3 @@
 Todo Application
 -----
-### Demo: https://ohotnikarturik.github.io/todoList/
+### Demo: https://jolly-edison-d46b02.netlify.com
