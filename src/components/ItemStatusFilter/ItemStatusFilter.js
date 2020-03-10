@@ -3,24 +3,29 @@ import './ItemStatusFilter.css'
 
 
 export default class ItemStatusFilter extends Component {
-  state = {
-    important: false
-  };
-
+  buttonsData = [
+    {name: 'all', label: 'All'},
+    {name: 'active', label: 'Active'},
+    {name: 'done', label: 'Done'},
+  ];
 
   render() {
 
+    const { filter, onFilterChange } = this.props;
+    const buttons = this.buttonsData.map(({name, label}) => {
+      const isActive = filter === name;
+      const clazz = isActive ? 'active' : 'btn';
+      return (
+          <button onClick={() => onFilterChange(name)}
+              key={name}
+                  type="button"
+                  className={`btn ${clazz}`}>{label}</button>
+      )
+    });
+
     return (
         <div className="btnGroup">
-          <button type="button"
-                  className="btn btnAll">All
-          </button>
-          <button type="button"
-                  className="btn btnActive">Active
-          </button>
-          <button type="button"
-                  className="btn btnDone">Done
-          </button>
+          { buttons }
         </div>
     )
   }
